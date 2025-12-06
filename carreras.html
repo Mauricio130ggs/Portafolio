@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Heraldo de la Era - Edición Especial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+    
+        :root {
+            --color-brass: #B68E54;
+            --color-copper: #7B3F00;
+            --color-charcoal: #1C1C1C;
+            --color-parchment: #F4E4BC;
+            --color-steam: #A8A9AD;
+        }
+        .font-header {
+            font-family: 'Playfair Display', serif;
+        }
+        .font-body {
+            font-family: 'Old Standard TT', serif;
+        }
+        body {
+            background-color: var(--color-parchment);
+            color: var(--color-charcoal);
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        .newspaper-columns {
+            column-count: 3;
+            column-gap: 30px;
+            column-rule: 1px solid var(--color-steam);
+            @media (max-width: 1024px) {
+                column-count: 2;
+            }
+            @media (max-width: 640px) {
+                column-count: 1;
+                column-gap: 0;
+                column-rule: none;
+            }
+        }
+
+        .masthead-title {
+            font-size: 4rem;
+            line-height: 1;
+            color: var(--color-copper);
+            border-bottom: 5px double var(--color-brass);
+            border-top: 5px double var(--color-brass);
+            padding: 10px 0;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .masthead-subtitle {
+            font-size: 1.1rem;
+            color: var(--color-charcoal);
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--color-steam);
+        }
+
+        .section-title {
+            color: var(--color-copper);
+            font-size: 2rem;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 900;
+            border-bottom: 2px solid var(--color-brass);
+            padding-bottom: 5px;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .breaking-news {
+            background-color: var(--color-charcoal);
+            color: var(--color-parchment);
+            border: 5px solid var(--color-brass);
+            padding: 15px;
+            margin-bottom: 30px;
+            box-shadow: 8px 8px 0px var(--color-copper); 
+            break-inside: avoid-column; 
+        }
+        .breaking-news h2 {
+            color: var(--color-brass);
+            font-size: 2.5rem;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="font-body">
+
+    <!-- ENCABEZADO Y NOMBRE DEL PERIÓDICO -->
+    <header class="text-center mb-6">
+        <h1 class="font-header masthead-title">EL HERALDO DE LA ERA</h1>
+        <p class="masthead-subtitle">Edición Especial. Londres, Martes 18 de Noviembre de 1888. Precio: Un Penique.</p>
+    </header>
+
+    <!-- SECCIÓN DE ÚLTIMA HORA -->
+    <section class="breaking-news font-header">
+        <h2 class="font-header">ÚLTIMA HORA</h2>
+        <p class="text-xl text-center mb-3">¡CABLEGRAMA URGENTE DESDE EL CONTINENTE!</p>
+        <div class="text-lg">
+            <p class="mb-2"><strong>París:</strong> Se informa de un avance revolucionario en el transporte aéreo. El profesor Alphonse Leclair ha completado con éxito la prueba de su "Ornitóptero a Vapor", un vehículo capaz de sostener el vuelo tripulado por más de quince minutos. Los detalles completos del diseño mecánico y la caldera de alta presión han sido asegurados y se publicarán en nuestra edición de mañana. El futuro del viaje transatlántico está asegurado.</p>
+            <p class="text-right text-sm text-gray-400 mt-2">Corresponsal en el Extranjero, A. P.</p>
+        </div>
+    </section>
+
+    <!-- CONTENIDO PRINCIPAL EN COLUMNAS -->
+    <main class="newspaper-columns">
+        <!-- NOTICIA PRINCIPAL -->
+        <article>
+            <h3 class="section-title">El Gran Misterio de la Niebla: Una Ciudad en Vilo</h3>
+            <p class="text-sm italic mb-2">Por Nuestro Editor de Crónicas, E. T. S.</p>
+            <p class="mb-4 text-justify">La densa niebla que ha envuelto a la capital durante las últimas cuarenta y ocho horas no solo ha paralizado el tráfico de carruajes, sino que también ha actuado como telón de fondo para una serie de incidentes desconcertantes. Testigos en el distrito de Whitechapel reportan haber escuchado "cánticos etéreos" justo antes del amanecer, un fenómeno que los más supersticiosos atribuyen a presagios de mal agüero.</p>
+            <p class="mb-4 text-justify">La Jefatura de Policía se ha limitado a emitir una declaración pidiendo a los ciudadanos mantener la calma y asegurar sus propiedades. Sin embargo, la ausencia de una explicación científica ha dado alas a la imaginación popular. Un destacado astrónomo, el Dr. J. A. Harrington, sugiere que la combinación de la humedad atmosférica y la reciente actividad de las fábricas ha creado un fenómeno meteorológico único, desestimando las teorías de lo paranormal.</p>
+        </article>
+
+        <!-- SECCIÓN DE TECNOLOGÍA -->
+        <article>
+            <h3 class="section-title">Innovaciones en Energía: La Dinamo Doméstica</h3>
+            <p class="mb-4 text-justify">El uso de la electricidad, que hasta hace poco se limitaba a la iluminación pública y las grandes fábricas, está a punto de revolucionar el hogar promedio. La compañía Edison-Swan ha presentado un prototipo de una "dinamo doméstica" compacta, diseñada para alimentar varios aparatos, desde el nuevo teléfono hasta el recientemente inventado ventilador eléctrico.</p>
+            <p class="mb-4 text-justify">Si bien el coste inicial sigue siendo prohibitivo para la clase trabajadora, los inversores predicen que, en el plazo de cinco años, la energía eléctrica será tan común en los hogares de clase media como el gas y el agua corriente. Los escépticos, no obstante, advierten sobre el riesgo de "quemaduras por sobrecarga" y la "peligrosa invisibilidad de la corriente".</p>
+        </article>
+
+        <!-- SECCIÓN DE CULTURA -->
+        <article>
+            <h3 class="section-title">Una Noche en el Teatro Real: El Triunfo de 'La Reina de Ébano'</h3>
+            <p class="mb-4 text-justify">El estreno de la ópera "La Reina de Ébano" anoche en el Teatro Real fue recibido con una ovación ensordecedora. La soprano principal, Miss Clara Beaumont, entregó una actuación que ha sido calificada como "magistral" y "un prodigio de la emoción humana". El libreto, que narra la trágica historia de amor en el Nilo, ha sido elogiado por su precisión histórica y su profundidad emocional.</p>
+            <p class="mb-4 text-justify">El vestuario, bañado en terciopelos y sedas, y los decorados, que recrean con fidelidad los templos egipcios, confirman el resurgimiento del interés por las culturas exóticas en la sociedad londinense. Se espera que la temporada de la ópera se agote en los próximos días.</p>
+        </article>
+
+        <!-- SECCIÓN DE CRÓNICA SOCIAL -->
+        <article>
+            <h3 class="section-title">Crónica Social: El Baile de la Duquesa</h3>
+            <p class="mb-4 text-justify">La alta sociedad se congregó el pasado sábado en la mansión de la Duquesa de Wroth, en Mayfair. El evento fue, como siempre, el barómetro de las tendencias de la temporada. Se notó una marcada predilección por los sombreros de ala ancha adornados con plumas de avestruz y los corsés de seda bordada.</p>
+            <p class="mb-4 text-justify">El momento más comentado de la noche fue la inesperada llegada del Barón von Klaus, un industrial alemán, quien según los rumores, está en negociaciones para adquirir una importante mina de carbón en el norte de Inglaterra. Los detalles de su encuentro con Lord Ashworth permanecen en secreto, pero se rumorea que las implicaciones son de gran alcance.</p>
+        </article>
+
+        <!-- SECCIÓN DE ADVERTENCIAS/INACTIVOS -->
+        <article class="border-t pt-4 border-dashed" style="border-color: var(--color-steam);">
+            <h3 class="text-lg font-bold" style="color: var(--color-steam);">Advertencias del Gobierno</h3>
+            <p class="text-sm italic text-justify" style="color: var(--color-steam);">Debido a la escasez de carbón importado, se recuerda a la ciudadanía el uso prudente de la calefacción a vapor. Las chimeneas deben ser revisadas por un deshollinador certificado (elementos inactivos o de menor importancia).</p>
+        </article>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="text-center mt-10 pt-5 border-t-2" style="border-color: var(--color-brass);">
+        <p class="text-sm text-gray-600">Publicado por la Sociedad Impresora de Londres. 1888.</p>
+    </footer>
+
+</body>
+</html>

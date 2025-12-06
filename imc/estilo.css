@@ -1,0 +1,126 @@
+  body {
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s ease;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .calculator {
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 500px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .input-group {
+            margin: 15px 0;
+        }
+
+        input {
+            padding: 12px;
+            width: 200px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        #bodyImage {
+            margin-top: 20px;
+            max-width: 200px;
+            height: auto;
+        }
+
+        /* Peso Bajo - Azul */
+        .c1 {
+            background-color: #3c98ee;
+        }
+
+        .c1 #result {
+            color: #1a5fa8;
+        }
+
+        /* Peso Normal - Verde claro */
+        .c2 {
+            background-color: #81f172;
+        }
+
+        .c2 #result {
+            color: #2d8a1e;
+        }
+
+        /* Sobrepeso - Naranja */
+        .c3 {
+            background-color: #dfa12d;
+        }
+
+        .c3 #result {
+            color: #8a5e0c;
+        }
+
+        /* Obesidad Leve - Rojo */
+        .c4 {
+            background-color: #F44336;
+        }
+
+        .c4 #result {
+            color: #8b1a0f;
+        }
+
+        /* Obesidad Media - Amarillo */
+        .c5 {
+            background-color: #dbd02f;
+        }
+
+        .c5 #result {
+            color: #726b0f;
+        }
+
+        /* Obesidad Mórbida - Rojo oscuro */
+        .c6 {
+            background-color: #8B0000;
+        }
+
+        .c6 #result {
+            color: #ffffff;
+        }

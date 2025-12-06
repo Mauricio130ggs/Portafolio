@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoria de Colores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Memoria de Colores</h1>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-label">Movimientos</div>
+                <div class="stat-value" id="moves">0</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Pares</div>
+                <div class="stat-value" id="pairs">0/8</div>
+            </div>
+            <div class="stat">
+                <div class="stat-label">Tiempo</div>
+                <div class="stat-value" id="timer">0s</div>
+            </div>
+        </div>
+
+        <div class="game-board" id="gameBoard"></div>
+
+        <div class="buttons">
+            <button onclick="resetGame()"> Nuevo Juego</button>
+        </div>
+
+        <div class="win-message" id="winMessage">
+            ¡Felicidades! Has ganado en <span id="finalMoves"></span> movimientos y <span id="finalTime"></span> segundos
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

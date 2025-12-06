@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+     <div class="container">
+        <div class="header">
+            TABLA DE MULTIPLICAR
+        </div>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="numero">Ingrese el número que quiere multiplicar:</label>
+                <input type="number" id="numero" value="" min="1" max="100">
+            </div>
+            
+            <div class="input-group">
+                <label for="veces">Ingrese las veces que se multiplicará:</label>
+                <input type="number" id="veces" value="" min="1" max="20">
+            </div>
+            
+            <button class="show-button" onclick="mostrarTabla()">Mostrar</button>
+        </div>
+        
+        <div class="result-header">
+            SU RESULTADO ES:
+        </div>
+        
+        <div class="result-section" id="resultSection">
+            <div class="multiplication-table">
+                <table id="tablaResultado">
+                    <thead>
+                        <tr>
+                            <th>Número</th>
+                            <th>Multiplicador</th>
+                            <th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tablaBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

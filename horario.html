@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Horario Completo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+        }
+        th {
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #e6f3ff;
+        }
+        .materia {
+            font-weight: bold;
+            text-align: left;
+            background-color: #e8f4f8;
+        }
+        .profesor {
+            text-align: left;
+            font-size: 11px;
+        }
+        .horario {
+            font-size: 11px;
+            line-height: 1.2;
+        }
+        .edificio {
+            color: #666;
+            font-size: 10px;
+        }
+        .no-clase {
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Mi Horario Universitario</h1>
+
+<table>
+    <tr>
+        <th>Materia</th>
+        <th>Profesor</th>
+        <th>Grupo</th>
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miércoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+        <th>Créditos</th>
+    </tr>
+    <tr>
+        <td class="materia">INGLÉS III</td>
+        <td class="profesor">ERICA GUADALUPE<br>ALVARADO RODRIGUEZ</td>
+        <td>TIID-76117</td>
+        <td class="horario">14:45 - 16:45<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">14:45 - 16:45<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">14:45 - 16:45<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">14:45 - 16:45<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">14:45 - 16:45<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td class="materia">ÉTICA PROFESIONAL</td>
+        <td class="profesor">VANESSA JANETH LARA<br>VALDEZ</td>
+        <td>TIID-76132</td>
+        <td class="no-clase">-</td>
+        <td class="horario">07:00 - 07:54<br><span class="edificio">EDIFICIO A (UD1)</span><br><br>13:00 - 13:54<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">07:00 - 07:54<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">07:00 - 07:54<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">13:00 - 13:54<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td class="materia">CÁLCULO DE VARIAS VARIABLES</td>
+        <td class="profesor">YAMIL EMANUEL CASTRO<br>SOLIS</td>
+        <td>TIID-76133</td>
+        <td class="horario">A301 (LITD)<br>EDIFICIO A (UD1)</td>
+        <td class="horario">A301 (LITD)<br>EDIFICIO A (UD1)</td>
+        <td class="horario">A301 (LITD)<br>EDIFICIO A (UD1)</td>
+        <td class="horario">A301 (LITD)<br>EDIFICIO A (UD1)</td>
+        <td class="horario">A301 (LITD)<br>EDIFICIO A (UD1)</td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td class="materia">APLICACIONES WEB</td>
+        <td class="profesor">LUIS ANTONIO GONZALEZ<br>CASTRO</td>
+        <td>TIID-76134</td>
+        <td class="horario">07:55 - 08:49<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td class="horario">07:55 - 08:49<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td class="horario">07:55 - 08:49<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td class="horario">07:55 - 08:49<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td class="horario">07:55 - 08:49<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td class="materia">ESTRUCTURA DE DATOS</td>
+        <td class="profesor">SAID POLANCO<br>MARTAGÓN</td>
+        <td>TIID-76135</td>
+        <td class="horario">08:50 - 09:44<br><span class="edificio">EDIFICIO A</span><br><br>15:40 - 16:34<br><span class="edificio">EDIFICIO A (UD1)</span></td>
+        <td class="horario">08:50 - 09:44<br><span class="edificio">EDIFICIO A</span></td>
+        <td class="horario">A201 (LITD)<br>EDIFICIO A (UD1)</td>
+        <td class="horario">08:50 - 09:44<br><span class="edificio">EDIFICIO A</span></td>
+        <td class="horario">08:50 - 09:44<br><span class="edificio">EDIFICIO A</span></td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td class="materia">DESARROLLO DE APLICACIONES MÓVILES</td>
+        <td class="profesor">MARCO AURELIO NUÑO<br>MAGANDA</td>
+        <td>TIID-76136</td>
+        <td class="horario">10:18 - 12:04<br><span class="edificio">A201 (LITD)</span></td>
+        <td class="horario">11:13 - 12:04<br><span class="edificio">A201 (LITD)</span></td>
+        <td class="horario">11:10 - 12:04<br><span class="edificio">A201 (LITD)</span></td>
+        <td class="horario">11:10 - 12:59<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td class="horario">12:05 - 12:59<br><span class="edificio">A201 (LITD)<br>EDIFICIO A (UD1)</span></td>
+        <td>5</td>
+    </tr>
+    <tr>
+        <td class="materia">ANÁLISIS Y DISEÑO DE SOFTWARE</td>
+        <td class="profesor">LUIS ANTONIO GONZALEZ<br>CASTRO</td>
+        <td>TIID-76137</td>
+        <td class="horario">12:05 - 13:54<br><span class="edificio">EDIFICIO A</span></td>
+        <td class="horario">12:05 - 13:54<br><span class="edificio">EDIFICIO A</span></td>
+        <td class="horario">12:05 - 13:54<br><span class="edificio">A201 (LITD)<br>EDIFICIO A</span></td>
+        <td class="horario">13:00 - 14:39<br><span class="edificio">A201 (LITD)<br>EDIFICIO A</span></td>
+        <td class="horario">13:55 - 14:44<br><span class="edificio">A201 (LITD)<br>EDIFICIO A</span></td>
+        <td>5</td>
+    </tr>
+</table>
+</body>
+</html>

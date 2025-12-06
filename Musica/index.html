@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="player">
+        <div class="file-input-container">
+            <label for="fileInput" class="file-label">Seleccionar Música</label>
+            <input type="file" id="fileInput" accept="audio/*" multiple>
+        </div>
+
+        <div class="song-count" id="songCount">No hay canciones cargadas</div>
+
+        <div class="album-art">
+            <img id="img" src="spo.png" alt="Album">
+        </div>
+
+        <div class="info">
+            <div class="title" id="title">Selecciona tu música</div>
+            <div class="artist" id="artist">---</div>
+        </div>
+
+        <div class="visualizer" id="viz"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="bar">
+                <div class="progress" id="prog"></div>
+            </div>
+            <div class="time">
+                <span id="curr">0:00</span>
+                <span id="dur">0:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prev">⏮</button>
+            <button class="play" id="play">▶</button>
+            <button id="next">⏭</button>
+        </div>
+
+        <div class="volume">
+            <span></span>
+            <input type="range" id="vol" min="0" max="100" value="70">
+        </div>
+    </div>
+
+    <audio id="audio"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

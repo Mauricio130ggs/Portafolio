@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de actividades académicas - Desarrollo Web">
+    <title>Mi Portafolio de Actividades</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+
+<body>
+    <!-- Background Animation -->
+    <div class="background-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="header-title">
+                    <span class="gradient-text">Mi Portafolio</span>
+                    <span class="subtitle">Actividades Académicas</span>
+                </h1>
+                <p class="header-description">
+                    Colección completa de proyectos y actividades organizadas por unidades
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Tabs Navigation -->
+            <nav class="tabs-nav" role="tablist">
+                <button class="tab-button active" data-tab="unidad1" role="tab" aria-selected="true">
+                    <span class="tab-number">01</span>
+                    <span class="tab-label">Unidad 1</span>
+                </button>
+                <button class="tab-button" data-tab="unidad2" role="tab" aria-selected="false">
+                    <span class="tab-number">02</span>
+                    <span class="tab-label">Unidad 2</span>
+                </button>
+                <button class="tab-button" data-tab="unidad3" role="tab" aria-selected="false">
+                    <span class="tab-number">03</span>
+                    <span class="tab-label">Unidad 3</span>
+                </button>
+                <button class="tab-button" data-tab="extra" role="tab" aria-selected="false">
+                    <span class="tab-number">★</span>
+                    <span class="tab-label">Extra</span>
+                </button>
+            </nav>
+
+            <!-- Tab Content -->
+            <div class="tabs-content">
+                <!-- Unidad 1 -->
+                <div class="tab-pane active" id="unidad1" role="tabpanel">
+                    <div class="projects-grid">
+                        <article class="project-card" data-project="horario">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">📅</div>
+                                <h3 class="card-title">Horario</h3>
+                                <p class="card-description">Tabla de horario HTML con estilos CSS personalizados</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                </div>
+                                <a href="horario.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-project="pagina">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🎵</div>
+                                <h3 class="card-title">Página Web</h3>
+                                <p class="card-description">Sitio web completo con múltiples páginas y navegación</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Multi-page</span>
+                                </div>
+                                <a href="pagina/HOME.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-project="dbd">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🎮</div>
+                                <h3 class="card-title">Dead by Daylight</h3>
+                                <p class="card-description">Fan page del videojuego con diseño temático</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Fan Page</span>
+                                </div>
+                                <a href="dead-by-daylight-fanpage/index.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Unidad 2 -->
+                <div class="tab-pane" id="unidad2" role="tabpanel">
+                    <div class="projects-grid">
+                        <article class="project-card" data-project="calculadora">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🔢</div>
+                                <h3 class="card-title">Calculadora</h3>
+                                <p class="card-description">Calculadora interactiva con JavaScript</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="Nueva carpeta/index.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-project="imc">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">⚖️</div>
+                                <h3 class="card-title">Calculadora IMC</h3>
+                                <p class="card-description">Calculadora de Índice de Masa Corporal con validaciones</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="imc/imc.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-project="memorama">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🎴</div>
+                                <h3 class="card-title">Memorama</h3>
+                                <p class="card-description">Juego de memoria interactivo con animaciones</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="memorama/memorama.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+
+                        <article class="project-card" data-project="musica">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🎧</div>
+                                <h3 class="card-title">Reproductor de Música</h3>
+                                <p class="card-description">Reproductor de música con playlist personalizada</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                </div>
+                                <a href="Musica/index.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Unidad 3 -->
+                <div class="tab-pane" id="unidad3" role="tabpanel">
+                    <div class="projects-grid">
+                        <article class="project-card" data-project="galeria">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🖼️</div>
+                                <h3 class="card-title">Galería Interactiva</h3>
+                                <p class="card-description">Galería de imágenes con efectos y animaciones</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">Responsive</span>
+                                </div>
+                                <a href="Actividad9/Index.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Extra -->
+                <div class="tab-pane" id="extra" role="tabpanel">
+                    <div class="projects-grid">
+                        <article class="project-card featured" data-project="carreras">
+                            <div class="card-glow"></div>
+                            <div class="card-content">
+                                <div class="card-icon">🏁</div>
+                                <h3 class="card-title">Carreras</h3>
+                                <p class="card-description">Proyecto extra con simulación de carreras</p>
+                                <div class="card-tags">
+                                    <span class="tag">HTML</span>
+                                    <span class="tag">CSS</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag featured-tag">★ Destacado</span>
+                                </div>
+                                <a href="carreras.html" target="_blank" class="card-link">
+                                    <span>Ver Proyecto</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                        <path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Portafolio de Actividades Académicas 2024-2025
+                </p>
+                <p class="footer-subtitle">
+                    Desarrollo Web | HTML · CSS · JavaScript
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+
+</html>
